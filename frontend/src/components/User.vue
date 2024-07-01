@@ -76,6 +76,7 @@ export default {
                         firstName: this.firstName,
                         lastName: this.lastName,
                         email: this.email,
+                        companyId: "26f06c1c-de33-45b7-8adf-f10c635b8f4d"
                     }).then(() => {
                         this.$router.push("/users");
                     });
@@ -85,6 +86,7 @@ export default {
                         firstName: this.firstName,
                         lastName: this.lastName,
                         email: this.email,
+                        companyId: "26f06c1c-de33-45b7-8adf-f10c635b8f4d"
                     }).then(() => {
                         this.$router.push("/users");
                     });

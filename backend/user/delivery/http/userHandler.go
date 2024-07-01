@@ -79,6 +79,7 @@ func (h *userHandler) CreateUser(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(err.Error())
 		return
 	}
+
 	inputErr := h.UserUsecase.SaveUser(&user)
 	if inputErr != nil {
 		json.NewEncoder(w).Encode(inputErr.Error())
